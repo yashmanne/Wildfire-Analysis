@@ -109,7 +109,7 @@ Wildfire smoke is mainly composed of fine (PM 2.5) particles (>90% by mass) but 
 Since we don't have a good understanding of the exact proportion of each pollutant's contribution to smoke & that the overall reported AQI is the [maximum value of the AQI for each subcategory](https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-document-sept2018.pdf), we'll make our estimate to be the highest AQI for any given day from any of the five stations near the city.
 
 ### Smoke Estimate Forecasting
-Data was forecasted using an ARIMA model. Portions of the modeling step were taken from this article by Brendan Artley under the MIT license.
+Data was forecasted using an ARIMA model. Portions of the modeling step were taken from this article by Brendan Artley under the [MIT license](https://github.com/brendanartley/Medium-Article-Code/blob/main/LICENSE).
 
 ### Python & Jupyter Set-Up
 This work assumes that users have a working Jupyter Notebook & Python 3 setup. Instructions on installing them can be found [here](https://docs.jupyter.org/en/latest/install/notebook-classic.html). It should be noted that Python modules required for this work comprise some standard modules that are installed with Python and others that are installed through the [Anaconda](https://docs.jupyter.org/en/latest/install/notebook-classic.html) distribution. 
