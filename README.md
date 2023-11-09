@@ -48,7 +48,7 @@ A portion of this analysis required historical Air Quality Index (AQI) data for 
 
 In this project, we used the US Environmental Protection Agency (EPA) Air Quality Service (AQS) API. The [documentation](https://aqs.epa.gov/aqsweb/documents/data_api.html) for the API provides definitions of the different call parameters and examples of the various calls that can be made to the API. Additional information on the Air Quality System can be found in the [EPA FAQ](https://www.epa.gov/outdoor-air-quality-data/frequent-questions-about-airdata). Note that terms of use can be found [here](https://aqs.epa.gov/aqsweb/documents/data_api.html#terms). All data accessed through the API lies in the [public domain](https://edg.epa.gov/epa_data_license.html).
 
-Specifically, we used the maximal daily average sensor data for monitoring stations in Deschutes County, all of which were <17 miles from Redmond, OR. These daily max values were then averaged for the fire season to get the annual estimate for 1983-2023. There was no data available before 1983. Finding nearby monitoring stations requires the Federal Information Processing Series (FIPS) of the desired city, county, and state. Information was gathered from [here](https://www.census.gov/library/reference/code-lists/ansi.html#cou). A detailed walkthrough of the data collection process can be found in [`./analysis_part1-AQI.ipynb`](./analysis_part1-AQI.ipynb). The final data can be found as [`./intermediate/final_annual_AQI_1983-2023.csv`](./intermediate/final_annual_AQI_1983-2023.csv).
+Specifically, we used the maximal daily average sensor data for monitoring stations in Deschutes County, all of which were <17 miles from Redmond, OR. These daily max values were then averaged for the fire season to get the annual estimate for 1983-2023. There was no data available before 1983. Finding nearby monitoring stations requires the Federal Information Processing Series (FIPS) of the desired city, county, and state. Information was gathered from [here](https://www.census.gov/library/reference/code-lists/ansi.html#cou). A detailed walkthrough of the data collection process can be found in [`./analysis_part1-AQI.ipynb`](./analysis_part1-AQI.ipynb). The final data can be found as [`./output/final_annual_AQI_1983-2023.csv`](./output/final_annual_AQI_1983-2023.csv).
 
 ## API Documentation
 ### EPA AQS API 
@@ -66,19 +66,29 @@ Note that some portions of the code were developed by Dr. David W. McDonald for 
 ## Output Files
 
 ### Data
-The final merged data is stored as [`./output/wp_scored_city_articles_by_state.csv`](./output/wp_scored_city_articles_by_state.csv). It should be noted that this data doesn't contain any information for Nebraska or Connecticut since neither state has city article data. This data frame has 5 variables:
-* `state`: The state of the city article.
-* `regional_division`: The US Census Bureau subdivisions of US regions.
-* `population`: The US Census Bureau estimate of state populations as of July 1, 2022.
-* `article_title`: The title of the city article.
-* `revision_id`: The revision ID of the city article.
-* `article_quality`: The article quality as predicted by ORES.
+
+* [`./output/final_annual_AQU_1983-2023.csv`](./output/final_annual_AQU_1983-2023.csv): Contains the final average max daily summary AQI during the fire season from 1983 onward. The data has 2 variables:
+  * `year`: the year
+  * `aqi`: the annual average AQI value for the fire season.
+ 
+[`./output/redmond_smoke_estimates.csv`](./output/redmond_smoke_estimates.csv): Contains the final calculated smoke estimates from 1963 onward. The data has 3 variables: 
+  * `Fire_Year`: the year of the fire season
+  * `annual_smoke_intake`: the cumulative smoke intake from all fires in that year.
+  * `daily_avg_fire_szn`: the average daily smoke intake during the fire season. Derived from `annual_smoke_intake` by the 184 days of the fire season.
+
+### Images
+* [`./output/figure1-fires_freq_by_distance.png`](./outptut/figure1-fires_freq_by_distance.png): a histogram showing the number of fires occurring at every 50-mile increment from Redmond, OR up to 1250 miles.
+* [`./output/figure2-annual_burn_over_time.png`](./outptut/figure2-annual_burn_over_time.png): a time series graph of total acres burned per year for the fires occurring within 1250 miles from Redmond, OR.
+* [`./output/figure3-comparing_smoke_AQI.png`](./outptut/figure3-comparing_smoke_AQI.png): a time series graph containing my annual fire smoke estimate & AQI estimate for Redmond, OR.
 
 ## Intermediate Files
-We store the raw JSON outputs of the API calls for page info and ORES scores just in case.
-* [./intermediate/city_revids.json](./intermediate/city_revids.json): The dictionary of `pages` values from the page info JSON response keyed by an article's page ID. Ex.
+We store the DataFrames containing the JSON outputs of the API calls for particulate and gaseous AQI data from 1963-2023 just in case.
+  * [./intermediate/gaseous_AQI_1963-2023.csv](./intermediate/gaseous_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for Ozone & Carbon Monoxide, or (if they were present but wasn't) surfur dioxide and nitrous oxide. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
 }
-* [./intermediate/revid_scores.json](./intermediate/revid_scores.json): The dictionary of the ORES scores from the raw JSON response keyed by an article's revision ID.
+  * [./intermediate/particulate_AQI_1963-2023.csv](./intermediate/particulate_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for pollutants of `Acceptable PM2.5 AQI & Speciation Mass`, `PM2.5 - Local Conditions`, & `PM10 Total 0-10um STP`. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
+
+We also store the Wildfire polygon subset fires within 1250 miles of Redmond, OR after 1963 in the following `./intermediate/redmond_fire_subset.csv` file as stated above but this can't be tracked by Git as it is too large.
+
 ## Notes
 ### Smoke Estimation
 We created an initial annual estimate of wildfire smoke in Redmond, OR to better understand the impact of wildfires on residents inside the city. Throughout the project, we will consider other socio-economic impacts as well. For this section, we only estimated the smoke seen by the city during each annual fire season from just the Wildfire data and recognized its limitations. Specifically, our final estimate is as follows:
