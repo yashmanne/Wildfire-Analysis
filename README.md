@@ -58,7 +58,8 @@ Specifically, we used the maximal daily average sensor data for monitoring stati
 
 ## Code
 The code for accessing and analyzing the data can be found in the following file:
-* [`bias_analysis.ipynb`](./bias_analysis.ipynb): An interactive Jupyter Notebook providing a detailed walkthrough of the entire data acquisition, analysis, and storage process.
+* [`analysis-part1-SmokeEstimates.ipynb`](./analysis-part1-SmokeEstimates.ipynb): An interactive Jupyter Notebook providing a detailed walkthrough of the entire data exploration, analysis, and storage process of the Wildfire data. Additionally, includes code for the smoke estimates & forecasting as well as the comparison of the estimate and the AQI data.
+* [`analysis-part1-AQI.ipynb`](./analysis-part1-AQI.ipynb): An interactive Jupyter Notebook providing a detailed walkthrough of the entire data acquisition, analysis, and storage process of the EPA AQS AQI data.
 
 Note that some portions of the code were developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. This code was provided under the [Creative Commons](https://creativecommons.org) [CC-BY license](https://creativecommons.org/licenses/by/4.0/). The rest of the code lies under the standard [MIT license](./LICENSE).
 
@@ -76,74 +77,8 @@ The final merged data is stored as [`./output/wp_scored_city_articles_by_state.c
 ## Intermediate Files
 We store the raw JSON outputs of the API calls for page info and ORES scores just in case.
 * [./intermediate/city_revids.json](./intermediate/city_revids.json): The dictionary of `pages` values from the page info JSON response keyed by an article's page ID. Ex.
-```Python
-{
-    "104730": {                            # First city article
-        "pageid": 104730,                  # Page ID of article
-        "ns": 0,                           # Namespace (Main/Article)
-        "title": "Abbeville, Alabama",     # Title of city's article
-        "contentmodel": "wikitext",        # The content model (wikitext)
-        "pagelanguage": "en",              # Language of the article (English)
-        "pagelanguagehtmlcode": "en",      # Language of HTML code (English)
-        "pagelanguagedir": "ltr",          # Language is left-to-write
-        "touched": "2023-10-10T22:35:37Z", # When the data was accessed
-        "lastrevid": 1171163550,           # The latest page revision ID
-        "length": 24706                    # Length of the page
-    },
-    "104761": {                            # Second city article
-        "pageid": 104761,
-        "ns": 0,
-        "title": "Adamsville, Alabama",
-        "contentmodel": "wikitext",
-        "pagelanguage": "en",
-        "pagelanguagehtmlcode": "en",
-        "pagelanguagedir": "ltr",
-        "touched": "2023-10-10T22:35:37Z",
-        "lastrevid": 1177621427,
-        "length": 18040
-    },
-    ...
 }
-```
-}
-* [./intermediate/revid_scores.json](./intermediate/revid_scores.json): The dictionary of the ORES scores from the raw JSON response keyed by an article's revision ID. Ex.
-
-```Python
-{
-    "1171163550": {                                # Revision ID  of article page
-        "articlequality": {                        # The name of the model we use (predicting article quality)
-            "score": {                             # We're interested in score
-                "prediction": "C",                 # The ORES prediction of article quality
-                "probability": {                   # The ORES model's probability of predicting each class
-                    "B": 0.31042252456158204,        # B class
-                    "C": 0.5979200965294227,         # C class
-                    "FA": 0.025186220917133947,      # Feature Article
-                    "GA": 0.04952133645299354,       # Good Article
-                    "Start": 0.013573873336789355,   # Start class
-                    "Stub": 0.0033759482020785892    # Stub class
-                }
-            }
-        }
-    },
-    "1177621427": {                                # Revision ID of 2nd article page
-        "articlequality": {
-            "score": {
-                "prediction": "C",
-                "probability": {
-                    "B": 0.198274200391586,
-                    "C": 0.3770695177348356,
-                    "FA": 0.019070364455845708,
-                    "GA": 0.3514876684327692,
-                    "Start": 0.05026148902798659,
-                    "Stub": 0.003836759956977147
-                }
-            }
-        }
-    },
-    ...
-}
-```
-
+* [./intermediate/revid_scores.json](./intermediate/revid_scores.json): The dictionary of the ORES scores from the raw JSON response keyed by an article's revision ID.
 ## Notes
 ### Smoke Estimation
 We created an initial annual estimate of wildfire smoke in Redmond, OR to better understand the impact of wildfires on residents inside the city. Throughout the project, we will consider other socio-economic impacts as well. For this section, we only estimated the smoke seen by the city during each annual fire season from just the Wildfire data and recognized its limitations. Specifically, our final estimate is as follows:
@@ -172,6 +107,9 @@ A summary AQI index data was provided for a series of pollutants (3 particulate 
 Wildfire smoke is mainly composed of fine (PM 2.5) particles (>90% by mass) but also contains some percentage of coarse particles (PM10 particles) and a small percentage of gaseous pollutants as well. [Source 1](https://www.scientificamerican.com/article/wildfire-smoke-reacts-with-city-pollution-creating-new-toxic-air-hazard/#:~:text=Scientists%20have%20long%20known%20that,it%20blocks%20harmful%20ultraviolet%20rays.), [Source 2](https://www.scientificamerican.com/article/wildfire-smoke-reacts-with-city-pollution-creating-new-toxic-air-hazard/#:~:text=Scientists%20have%20long%20known%20that,it%20blocks%20harmful%20ultraviolet%20rays.)
 
 Since we don't have a good understanding of the exact proportion of each pollutant's contribution to smoke & that the overall reported AQI is the [maximum value of the AQI for each subcategory](https://www.airnow.gov/sites/default/files/2020-05/aqi-technical-assistance-document-sept2018.pdf), we'll make our estimate to be the highest AQI for any given day from any of the five stations near the city.
+
+### Smoke Estimate Forecasting
+Data was forecasted using an ARIMA model. Portions of the modeling step were taken from this article by Brendan Artley under the MIT license.
 
 ### Python & Jupyter Set-Up
 This work assumes that users have a working Jupyter Notebook & Python 3 setup. Instructions on installing them can be found [here](https://docs.jupyter.org/en/latest/install/notebook-classic.html). It should be noted that Python modules required for this work comprise some standard modules that are installed with Python and others that are installed through the [Anaconda](https://docs.jupyter.org/en/latest/install/notebook-classic.html) distribution. 
