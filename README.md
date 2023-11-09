@@ -80,6 +80,7 @@ Note that some portions of the code were developed by Dr. David W. McDonald for 
 * [`./output/figure1-fires_freq_by_distance.png`](./outptut/figure1-fires_freq_by_distance.png): a histogram showing the number of fires occurring at every 50-mile increment from Redmond, OR up to 1250 miles.
 * [`./output/figure2-annual_burn_over_time.png`](./outptut/figure2-annual_burn_over_time.png): a time series graph of total acres burned per year for the fires occurring within 1250 miles from Redmond, OR.
 * [`./output/figure3-comparing_smoke_AQI.png`](./outptut/figure3-comparing_smoke_AQI.png): a time series graph containing my annual fire smoke estimate & AQI estimate for Redmond, OR.
+* [`./output/ARIMA_forecast_smoke_estimate.png`](./output/ARIMA_forecast_smoke_estimate.png): a time series graph containing my ARIMA forecast of the smoke estimate until 2050 along with a 95% confidence interval.
 
 ## Intermediate Files
 We store the DataFrames containing the JSON outputs of the API calls for particulate and gaseous AQI data from 1963-2023 just in case.
