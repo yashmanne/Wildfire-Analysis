@@ -63,7 +63,8 @@ FRED is an online database of 1000s of economic time series data aggregated from
 
 The Oregon Tracking Data Explorer is part of a larger National Environmental Public Health Tracking Network funded by the CDC. As such, data from this source is provided under the [public domain](https://www.cdc.gov/other/agencymaterials.html) with citation. The database asks that users only use the data for statistical analysis and reporting purposes without attempting to learn or disclose the identities of individuals within the data. From this source, I downloaded two annual data sets:
 * [Asthma Hospitalizations and Emergency Department Visits](https://visual-data.dhsoha.state.or.us/t/OHA/views/Asthma/About/)
-* [Chronic Obstructive Pulmonary Disorder (COPD) Hospitalizations](https://visual-data.dhsoha.state.or.us/t/OHA/views/COPD/About/)
+* [Chronic Obstructive Pulmonary Disorder (COPD) Hospitalizations](https://visual-data.dhsoha.state.or.us/t/OHA/views/COPD/About/) 
+
 The first tracks the annual age-adjusted asthma-related hospitalization rate per 10,000 and the raw counts for adults older than 25 from 2000 to 2021. Additionally, I have access to the crude rates for 20-year age bins of 25-44, 45-64, and 65-84. I also have access to similar data for emergency department visits but due to low data history (2018—), I ignore it for my analysis. The second tracks the same metrics for COPD-related annual hospitalizations. Age-adjusted rates allow for fairer comparisons to be made between groups with different age distributions.
 The IHME data is provided under the [IHME FREE-OF-CHARGE NON-COMMERCIAL USER AGREEMENT](https://www.healthdata.org/about/ihme-free-charge-non-commercial-user-agreement). The data provided by IHME arises from the [Global Burden of Disease Study in 2019](https://www.healthdata.org/research-analysis/gbd) shown in an interactive [query tool](https://vizhub.healthdata.org/gbd-results/). From this query tool, I accessed the raw annual count and rate per 100,000 for the deaths, incidence, and prevalence of asthma, COPD, and all chronic respiratory illness diseases from 1990 to 2019 for the state of Oregon. Incidence monitors the number of new cases in a given year whereas prevalence tracks the total cases in a given year. In the data set, I have access to both the estimated metric as well as lower and upper bound values.
 #### Storage Locations:
@@ -87,29 +88,26 @@ The IHME data is provided under the [IHME FREE-OF-CHARGE NON-COMMERCIAL USER AGR
 * [Additional AQS Info](https://www.epa.gov/aqs/aqs-manuals-and-guides)
 
 ## Code
-The code for accessing and analyzing the data can be found in the following file:
+The code for accessing and analyzing the wildfire data can be found in the following files:
 * [`analysis-part1-SmokeEstimates.ipynb`](./analysis-part1-SmokeEstimates.ipynb): An interactive Jupyter Notebook providing a detailed walkthrough of the entire data exploration, analysis, and storage process of the Wildfire data. Additionally, includes code for the smoke estimates & forecasting as well as the comparison of the estimate and the AQI data.
 * [`analysis-part1-AQI.ipynb`](./analysis-part1-AQI.ipynb): An interactive Jupyter Notebook providing a detailed walkthrough of the entire data acquisition, analysis, and storage process of the EPA AQS AQI data.
-
 Note that some portions of the code were developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. This code was provided under the [Creative Commons](https://creativecommons.org) [CC-BY license](https://creativecommons.org/licenses/by/4.0/). The rest of the code lies under the standard [MIT license](./LICENSE).
 
-
-
-
-
+* [`Extension-Data_Exploration.ipynb`](./Extension-Data_Exploration.ipynb): An interactive Jupyter Notebook providing a detailed walkthrough of the data exploration, analysis, and storage process of the county and state respiratory health data. Additionally, includes code for the EDA plots.
+* [`Extension-HospitalizationModeling.ipynb`](./Extension-HospitalizationModeling.ipynb): An interactive Jupyter Notebook providing a detailed walkthrough of forecasting the respiratory health indicators and linking it with the earlier smoke estimates.
 
 ## Output Files
-
 ### Data
-
 * [`./output/final_annual_AQU_1983-2023.csv`](./output/final_annual_AQU_1983-2023.csv): Contains the final average max daily summary AQI during the fire season from 1983 onward. The data has 2 variables:
   * `year`: the year
   * `aqi`: the annual average AQI value for the fire season.
- 
-[`./output/redmond_smoke_estimates.csv`](./output/redmond_smoke_estimates.csv): Contains the final calculated smoke estimates from 1963 onward. The data has 3 variables: 
+* [`./output/redmond_smoke_estimates.csv`](./output/redmond_smoke_estimates.csv): Contains the final calculated smoke estimates from 1963 onward. The data has 3 variables: 
   * `Fire_Year`: the year of the fire season
   * `annual_smoke_intake`: the cumulative smoke intake from all fires in that year.
-  * `daily_avg_fire_szn`: the average daily smoke intake during the fire season. Derived from `annual_smoke_intake` by the 184 days of the fire season.
+  * `daily_avg_fire_szn`: the average daily smoke intake during the fire season. Derived from `annual_smoke_intake` by dividing by the 184 days of the fire season.
+* [`./output/wildfire_smoke_forecast_1963-2050.csv`](./output/wildfire_smoke_forecast_1963-2050.csv): Contains the final annual smoke index from 1963-2020 and the forecasted annual smoke index until 2050. The data has 2 variables: 
+  * `Fire_Year`: the year of the fire season
+  * `Annual Smoke Index`: the average daily smoke intake during the fire season. The forecast is done through an ARIMA model.
 
 ### Images
 * [`./output/figure1-fires_freq_by_distance.png`](./outptut/figure1-fires_freq_by_distance.png): a histogram showing the number of fires occurring at every 50-mile increment from Redmond, OR up to 1250 miles.
@@ -118,12 +116,40 @@ Note that some portions of the code were developed by Dr. David W. McDonald for 
 * [`./output/ARIMA_forecast_smoke_estimate.png`](./output/ARIMA_forecast_smoke_estimate.png): a time series graph containing my ARIMA forecast of the smoke estimate until 2050 along with a 95% confidence interval.
 
 ## Intermediate Files
+
+### Wildfire Data
 We store the DataFrames containing the JSON outputs of the API calls for particulate and gaseous AQI data from 1963-2023 just in case.
   * [./intermediate/gaseous_AQI_1963-2023.csv](./intermediate/gaseous_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for Ozone & Carbon Monoxide, or (if they were present but wasn't) sulfur dioxide and nitrous oxide. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
 }
   * [./intermediate/particulate_AQI_1963-2023.csv](./intermediate/particulate_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for pollutants of `Acceptable PM2.5 AQI & Speciation Mass`, `PM2.5 - Local Conditions`, & `PM10 Total 0-10um STP`. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
 
 We also store the Wildfire polygon subset fires within 1250 miles of Redmond, OR after 1963 in the following `./intermediate/redmond_fire_subset.csv` file as stated above but this can't be tracked by Git as it is too large.
+
+### Respiratory Health Data
+ * [./intermediate/combined_health_data.csv](./intermediate/combined_health_data.csv): The data contains rows from 1990 to 2021 with 23 other columns denoting the cleaned annual rates per 10,000 for the following variables (with OR denoting state-level data and DC denoting data for Deschutes County). Note that all state data exists from 1990-2019 while all county data exists from 2000-2021 except for the premature death rate, which also exists for 1999.
+   * 'Deaths: Asthma (OR)': rate of people dying due to Asthma in Oregon
+   * 'Deaths: Chronic obstructive pulmonary disease (OR)': rate of people dying due to COPD in Oregon
+   * 'Deaths: Chronic respiratory diseases (OR)': rate of people dying due to any chronic respiratory illness in Oregon
+   * 'Incidence: Asthma (OR)': rate of people with asthma in Oregon
+   * 'Incidence: Chronic obstructive pulmonary disease (OR)': rate of people with COPD in Oregon
+   * 'Incidence: Chronic respiratory diseases (OR)': rate of new people with any chronic respiratory illness in Oregon
+   * 'Prevalence: Asthma (OR)': rates of people with Asthma
+   * 'Prevalence: Chronic obstructive pulmonary disease (OR)': rates of people with COPD in Oregon
+   * 'Prevalence: Chronic respiratory diseases (OR)': rate of people with any chronic respiratory illness in Oregon
+   * 'Asthma: Age-Adjusted HR (DC)': Asthma hospitalization rates for everyone adjusted by age
+   * 'Asthma: Crude HR (DC)': Asthma hospitalization rates for all ages
+   * 'Asthma: Crude HR Ages 0-4 (DC)': Asthma hospitalization rates for ages 0-4
+   * 'Asthma: Crude HR Ages 5-14 (DC)': Asthma hospitalization rates for ages 5-14
+   * 'Asthma: Crude HR Ages 15-34 (DC)': Asthma hospitalization rates for ages 15-34
+   * 'Asthma: Crude HR Ages 35-64 (DC)': Asthma hospitalization rates for ages 35-64
+   * 'Asthma: Crude HR Ages 65+ (DC)': Asthma hospitalization rates for ages 65+
+   * 'Asthma: Total Hospitalizations (DC)': total Asthma hospitalizations for ages 65+
+   * 'COPD: Age-Adjusted HR (DC)': COPD hospitalization rates for all ages adjusted by age
+   * 'COPD: Crude HR (DC)': COPD hospitalization rates for all ages
+   * 'COPD: Crude HR Ages 25-44 (DC)': COPD hospitalization rates for ages 25-45
+   * 'COPD: Crude HR Ages 45-64 (DC)': COPD hospitalization rates for ages 45-65
+   * 'COPD: Crude HR Ages 65-84 (DC)': COPD hospitalization rates for ages 65+
+   * 'PDR Age-Adjusted (DC)': the premature death rate defined as those dying before 75.
 
 ## Notes
 ### Smoke Estimation
