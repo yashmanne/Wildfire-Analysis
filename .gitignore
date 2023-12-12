@@ -1,5 +1,7 @@
 # input data is too large
-input/
+input/USGS_Wildland_Fire_Combined_Dataset
+input/usgs*
+input/Wildland_Fire_Polygon_Metadata*
 intermediate/redmond_fire_subset.csv
 # Secrets File
 my_secrets.py

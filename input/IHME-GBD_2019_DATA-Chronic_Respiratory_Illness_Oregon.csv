@@ -1,0 +1,541 @@
+measure,location,sex,age,cause,metric,year,val,upper,lower
+Deaths,Oregon,Both,All ages,Asthma,Number,1991,75.78083358622843,84.45751798326424,67.10654715448362
+Deaths,Oregon,Both,All ages,Asthma,Rate,1991,2.581529458457324,2.877107051269071,2.2860335540850696
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1990,1468.916244402052,1596.3511868897706,1351.0539830536602
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1990,50.669183860932336,55.06495833468118,46.603611971938825
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1990,1261.661434689346,1358.945816344957,1160.2412829129964
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1990,43.520081861811626,46.87583494827285,40.02166843140434
+Deaths,Oregon,Both,All ages,Asthma,Number,1990,75.60650031047874,85.1333895692504,67.07891534187692
+Deaths,Oregon,Both,All ages,Asthma,Rate,1990,2.607990537181869,2.9366135647473017,2.3138377750278285
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1992,1574.2076333993864,1687.1790293037768,1438.232311172423
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1992,52.86947539143137,56.663599056557544,48.302769068964665
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1992,1354.063324677959,1446.8902365370395,1235.9645271353352
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1992,45.47596905492752,48.59354390850535,41.50964254375799
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1995,1809.1001394308603,1932.5962576180455,1608.4990339703577
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1995,57.895071879654765,61.847211666429985,51.47540766834817
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1995,1560.7000071839934,1672.7490351830058,1385.5027913073948
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1995,49.945736628443925,53.53154505809177,44.33905119118447
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1991,1504.9029387151893,1615.5588814767923,1384.5679232089267
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1991,51.26561802717181,55.03519355800048,47.16631781216612
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1991,1293.4004667676593,1385.2512102821142,1188.3868697602804
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1991,44.0606318053217,47.189594485495526,40.48326690467508
+Deaths,Oregon,Both,All ages,Asthma,Number,1992,77.85490133001048,86.78788023960482,69.27215600016348
+Deaths,Oregon,Both,All ages,Asthma,Rate,1992,2.6147426188505976,2.9147550813826917,2.326492687024641
+Deaths,Oregon,Both,All ages,Asthma,Number,1994,83.0231617340589,92.49824427399781,72.9007577309059
+Deaths,Oregon,Both,All ages,Asthma,Rate,1994,2.7020740772033442,3.010450370948225,2.3726300415315658
+Deaths,Oregon,Both,All ages,Asthma,Number,1993,81.2451380332486,90.67831110013194,71.61400198977434
+Deaths,Oregon,Both,All ages,Asthma,Rate,1993,2.6871767181775548,2.999178194912015,2.3686276311536236
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1993,1696.3864827173259,1815.2214853711046,1538.946274211528
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1993,56.10785299575231,60.03831160738166,50.900530157200805
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1993,1463.4300145787633,1564.0192801903218,1321.8633708755262
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1993,48.402835653365045,51.72981790969828,43.72052975495928
+Deaths,Oregon,Both,All ages,Asthma,Number,1998,83.55164314531248,93.98647883293037,71.58625512462808
+Deaths,Oregon,Both,All ages,Asthma,Rate,1998,2.5370705699069322,2.8539274685657308,2.173737993047872
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1999,2084.342429686245,2239.039780751846,1760.7256070219946
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1999,62.21110871106122,66.82834126718396,52.55215773987917
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1999,1808.7274212627117,1951.977567696215,1546.9529434000967
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1999,53.98486190668306,58.26043117290549,46.171711692903635
+Deaths,Oregon,Both,All ages,Asthma,Number,1995,84.34628485738871,93.40362763751372,73.90120433565711
+Deaths,Oregon,Both,All ages,Asthma,Rate,1995,2.6992614273616744,2.9891157587305175,2.3649965216142945
+Deaths,Oregon,Both,All ages,Asthma,Number,2002,74.3377258172535,83.33888674715841,61.029283095949346
+Deaths,Oregon,Both,All ages,Asthma,Rate,2002,2.1190701782336454,2.375657146510474,1.7396998951182463
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2003,2327.309664419947,2516.8347661108974,1902.066066258423
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2003,65.4737898290691,70.805665885425,53.5104871376226
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2003,2015.7472680062172,2200.4958454864827,1677.1384408454521
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2003,56.70866021469203,61.90615916297958,47.182638163252896
+Deaths,Oregon,Both,All ages,Asthma,Number,1996,84.94705972320719,94.8132383452946,74.86188412757784
+Deaths,Oregon,Both,All ages,Asthma,Rate,1996,2.6718676443437324,2.9821917864572653,2.3546553188166444
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1996,1904.7746502178047,2042.502612496804,1689.8772132423521
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1996,59.911499871404374,64.2435025014391,53.15226052188457
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1996,1646.5187222747786,1768.9125138369968,1456.1567589885715
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1996,51.78849172869372,55.63818367340858,45.800974655407515
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1994,1748.349569935398,1874.4026785197752,1574.039189191027
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1994,56.901832598770234,61.004360495115364,51.228722211749364
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1994,1507.9469254766802,1615.762938989412,1350.7864450852517
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1994,49.07768160144015,52.58666450615472,43.962732337200244
+Deaths,Oregon,Both,All ages,Asthma,Number,2006,68.84571794787638,77.65577161907218,56.78886040608715
+Deaths,Oregon,Both,All ages,Asthma,Rate,2006,1.868689605541453,2.107822208270512,1.5414285203873515
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1997,1941.460757752362,2091.1952946834353,1689.41694598391
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1997,59.998092608718615,64.62542621700376,52.20903588967119
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1997,1679.2352115446292,1807.890099988598,1465.9312176190303
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1997,51.89438381990043,55.87028077305962,45.30252625581884
+Deaths,Oregon,Both,All ages,Asthma,Number,1997,84.05248402188266,94.10965030148868,72.899189477983
+Deaths,Oregon,Both,All ages,Asthma,Rate,1997,2.597522870447331,2.908325337824345,2.252846112874378
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2007,2505.4898028078537,2721.886578286077,1990.0106080609598
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2007,67.27925947246909,73.0901052360755,53.43723207440534
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2007,2161.321561842751,2391.40827030767,1759.6346534333045
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2007,58.037400112225555,64.21585804992284,47.2510070854863
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,1998,2031.7405926058389,2176.2216193529207,1746.3204397005006
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1998,61.69440921970343,66.08161869962301,53.02754112789281
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1998,1758.8388143369475,1886.4168377980898,1515.6943068317282
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1998,53.40766530831092,57.281610050812624,46.02450980108598
+Deaths,Oregon,Both,All ages,Asthma,Number,1999,78.36996529158104,88.13639213228078,66.50807564705968
+Deaths,Oregon,Both,All ages,Asthma,Rate,1999,2.339098586200414,2.630595910849161,1.9850582444198168
+Deaths,Oregon,Both,All ages,Asthma,Number,2010,64.0637395765618,72.27965904247569,51.27665343917455
+Deaths,Oregon,Both,All ages,Asthma,Rate,2010,1.6734281523721002,1.8880386484617206,1.3394128408940984
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2002,2305.4708761725215,2496.2965681376895,1898.2857000110694
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2002,65.71972073094389,71.15939525203794,54.11250576254787
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2002,1998.5944364686204,2172.2864318634033,1667.4072548486315
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2002,56.971905208880656,61.92316681384026,47.53108801587905
+Deaths,Oregon,Both,All ages,Asthma,Number,2000,74.30326398056539,83.94817510449188,62.9695716022677
+Deaths,Oregon,Both,All ages,Asthma,Rate,2000,2.181189317415906,2.464317890562257,1.8484861840934312
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2000,2125.51413111649,2293.6047650159203,1782.8483949002089
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2000,62.39495371321055,67.32929273652714,52.335922612303484
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2000,1842.7754390117173,1998.0843245574913,1567.5477837942358
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2000,54.095094705665666,58.65422258113579,46.01572390474341
+Deaths,Oregon,Both,All ages,Asthma,Number,2003,71.2515434587551,80.03152079217747,59.38436622269914
+Deaths,Oregon,Both,All ages,Asthma,Rate,2003,2.004507029183007,2.2515125735765826,1.6706498377243424
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2011,2666.8484344775447,2927.6791278555856,2078.4139202873243
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2011,69.11530512654089,75.87511671767925,53.865157998021196
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2011,2297.036034139225,2560.0681068196177,1858.117986617493
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2011,59.531072082577715,66.34793566070341,48.155864407547824
+Deaths,Oregon,Both,All ages,Asthma,Number,2001,74.67472239041736,84.1715327718023,61.91464311939663
+Deaths,Oregon,Both,All ages,Asthma,Rate,2001,2.1587880395848282,2.4333334280276757,1.78990409020213
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2001,2226.769480967932,2411.053729981955,1845.6167470222865
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2001,64.37417065032136,69.70168469952506,53.3553420968654
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2001,1929.3117940750788,2097.906853534295,1621.262561019332
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2001,55.77490069402255,60.6488524978307,46.869437390829006
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2004,2324.017854307221,2516.5380262145914,1891.3568031576244
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2004,64.5694732383496,69.9183676389569,52.54861199078917
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2004,2009.8349078226427,2195.698871187952,1667.4640217429567
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2004,55.84035469161226,61.00431596938282,46.328075031049046
+Deaths,Oregon,Both,All ages,Asthma,Number,2004,68.33456738519776,77.32521840310268,56.84120046704898
+Deaths,Oregon,Both,All ages,Asthma,Rate,2004,1.8985770749803494,2.148369304080504,1.5792505060107866
+Deaths,Oregon,Both,All ages,Asthma,Number,2014,68.787541787876,78.09207855341177,54.56102609962773
+Deaths,Oregon,Both,All ages,Asthma,Rate,2014,1.7460413093824645,1.9822193313765082,1.3849281857755755
+Deaths,Oregon,Both,All ages,Asthma,Number,2005,67.15757793740681,75.64419059533145,55.73787130449923
+Deaths,Oregon,Both,All ages,Asthma,Rate,2005,1.8437395280826825,2.076730408598448,1.530223687207307
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2005,2356.472339145065,2552.995527203054,1909.0244481450495
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2005,64.69442960799812,70.089763703356,52.410225967377514
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2005,2034.6136772051518,2234.3324491724898,1673.1057012916963
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2005,55.858144028617765,61.341209464949046,45.9333289090192
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2015,2905.126506999143,3196.5427676810787,2290.3372116447695
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2015,73.3120008033911,80.6660038341588,57.797553082664216
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2015,2495.764011942705,2796.6736427467035,2030.3319812034083
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2015,62.981578532914625,70.57515046243371,51.23621965464336
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2006,2433.6832692954526,2640.2561300080397,1942.9033386542205
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2006,66.057828490593,71.66486650409506,52.73651552684449
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2006,2100.012411492874,2314.280299500984,1719.9531159419282
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2006,57.00095055782385,62.81685584659173,46.684944330346205
+Deaths,Oregon,Both,All ages,Asthma,Number,2009,66.16292631733506,74.52462810471371,53.26192530697465
+Deaths,Oregon,Both,All ages,Asthma,Rate,2009,1.7429168286481798,1.963187478278458,1.4030683210486423
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2009,2586.1191454114846,2836.098237016055,2025.0187415859214
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2009,68.12562306885073,74.71077263551433,53.34466656009021
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2009,2229.1096545070495,2479.0340534293987,1811.9832102031648
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2009,58.72099294865263,65.30470175684991,47.7327138637094
+Deaths,Oregon,Both,All ages,Asthma,Number,2018,67.9512658883677,82.07639277248457,53.620805910928574
+Deaths,Oregon,Both,All ages,Asthma,Rate,2018,1.6917117437893219,2.0433702849507407,1.334941238916557
+Deaths,Oregon,Both,All ages,Asthma,Number,2007,67.85652199195916,76.84539242611875,55.60372140989878
+Deaths,Oregon,Both,All ages,Asthma,Rate,2007,1.8221333588666164,2.063509135222392,1.4931121236969418
+Deaths,Oregon,Both,All ages,Asthma,Number,2008,66.21855270202268,74.3054985477423,54.172575052711444
+Deaths,Oregon,Both,All ages,Asthma,Rate,2008,1.7604400844863748,1.975433965309151,1.4401941557343452
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2019,3149.5719315218216,3789.6111022696914,2397.4372455820935
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2019,78.14714920895358,94.02779510734429,59.485190439540325
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2019,2709.3272796704655,3254.119284188807,2121.252852535225
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2019,67.22380303852697,80.74117714224171,52.63250587100936
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2010,2597.5472717456664,2855.214038992422,2025.8711683560166
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2010,67.85131121578875,74.58190210997351,52.91838828974989
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2010,2239.796771947908,2498.317145620706,1798.4927737135567
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2010,58.506403131375414,65.25929133498718,46.978969058983125
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2008,2538.7502978012194,2779.5965214099697,2018.9819140209988
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2008,67.49343811337138,73.89640720491813,53.675239736658
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2008,2190.6788534289367,2430.3120154011754,1784.747168614695
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2008,58.23985436780998,64.61057385191702,47.44803877610117
+Deaths,Oregon,Both,All ages,Asthma,Number,2011,64.43737112627976,72.85505823915346,51.90812568614417
+Deaths,Oregon,Both,All ages,Asthma,Rate,2011,1.6699893812366124,1.8881461410076235,1.3452755315836065
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2012,2691.424999993945,2954.514415584167,2100.338771325411
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2012,69.23955508149237,76.00778904014183,54.03328052883035
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2012,2315.3925771355152,2577.789928808553,1859.1823048800254
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2012,59.565751183931866,66.31618111768223,47.82929325749975
+Deaths,Oregon,Both,All ages,Asthma,Number,2012,64.66119071202195,73.3145187811099,51.492803818529076
+Deaths,Oregon,Both,All ages,Asthma,Rate,2012,1.6634727239101998,1.8860880988432498,1.324703020259361
+Deaths,Oregon,Both,All ages,Asthma,Number,2015,68.55277430235985,77.55886926353006,53.974610046303496
+Deaths,Oregon,Both,All ages,Asthma,Rate,2015,1.7299560045392446,1.9572283245012225,1.3620703420467226
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2013,2756.1781793902837,3018.982589976422,2154.3668372216116
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2013,70.41485712563386,77.1289858281196,55.03977724427163
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2013,2368.546052702531,2647.632471046831,1912.041223974559
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2013,60.51162916231619,67.64173069942585,48.848840982506616
+Deaths,Oregon,Both,All ages,Asthma,Number,2013,65.7347464180241,74.5537438021767,52.71468333843739
+Deaths,Oregon,Both,All ages,Asthma,Rate,2013,1.6793917069029571,1.904699506463949,1.3467550550451846
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2016,2903.860744556592,3201.4480166241856,2303.725799360406
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2016,72.90566321852553,80.37702611915681,57.838399307141806
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2016,2493.5458301955996,2802.8892028886935,2041.6102863498652
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2016,62.604108291686764,70.37062526076726,51.25760670139462
+Deaths,Oregon,Both,All ages,Asthma,Number,2016,67.41894225807069,76.37131300110742,54.1600398796416
+Deaths,Oregon,Both,All ages,Asthma,Rate,2016,1.6926509675196768,1.9174133042201147,1.359766867184946
+Deaths,Oregon,Both,All ages,Asthma,Number,2017,67.38283970049484,79.71887047130392,52.43384798324138
+Deaths,Oregon,Both,All ages,Asthma,Rate,2017,1.684175775330294,1.9925041906994243,1.3105386619685278
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2014,2837.7253415859727,3110.9306316615894,2230.0933564381376
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2014,72.03027673775465,78.9650749587011,56.606691021580815
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2014,2434.8827614523666,2728.4849459271663,1978.2849771806145
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2014,61.804881734389674,69.25741644189245,50.21501280769567
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2017,2932.171348783425,3383.8333436774806,2294.9007355773692
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2017,73.28708580238614,84.57598656434581,57.359058223524116
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2017,2518.943810431506,2920.827257469829,2024.8456176860618
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2017,62.95882102629419,73.0035500554747,50.6092642169476
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Number,2018,3029.284097699183,3557.7284570903757,2365.8979784278745
+Deaths,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2018,75.41692441419598,88.57305207471602,58.901292601217264
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2018,2601.3003977736716,3057.6260947194314,2102.592271438388
+Deaths,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2018,64.76186093820655,76.12252553250865,52.34604523536769
+Deaths,Oregon,Both,All ages,Asthma,Number,2019,69.28094526809853,85.05824706169801,52.546242534139765
+Deaths,Oregon,Both,All ages,Asthma,Rate,2019,1.7189981638512501,2.1104644278979205,1.303776876656748
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1990,385354.63948179554,434437.1949855238,347194.29038347915
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1990,13292.52444036701,14985.591038725166,11976.211306770307
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1991,371295.43515065446,412995.6525938229,338047.5395362335
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1991,12648.450251493865,14068.998623149395,11515.836397851333
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1992,359494.85965935676,397595.4042303712,330124.20207236183
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1992,12073.569097783959,13353.16891731191,11087.160935620113
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1993,350742.7817446411,387486.91535057034,322410.30431937746
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1993,11600.790644079178,12816.100048994602,10663.696123120859
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1994,345697.30383975856,378489.7986167519,319295.53714867233
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1994,11251.07384197945,12318.339267832172,10391.801226021138
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1995,345898.0553864764,378586.93750050076,319748.5032121349
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1995,11069.477218620368,12115.591327180651,10232.635647633277
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1996,350651.411041128,383262.0029517417,324132.40386309486
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1996,11029.15348285221,12054.865092798167,10195.042479246178
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1997,358365.8404681578,390699.5578194525,331913.0109356328
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1997,11074.78829966254,12074.015999877822,10257.301101058281
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1998,367491.3616852962,401030.289964738,340340.83920913626
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1998,11158.984830558638,12177.404393367264,10334.551115807371
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1999,376438.93988021446,410608.42496576475,348552.3497552562
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1999,11235.526120096238,12255.378482636366,10403.198540358904
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2000,384413.95041013334,421020.8839972095,355345.9539507341
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2000,11284.559482064493,12359.164394499678,10431.261794192957
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2001,390340.8264775842,425561.73733271577,362245.3976476468
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2001,11284.449149416603,12302.658238963868,10472.232193215923
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2002,395431.37095452024,429876.6640275666,367495.83179409895
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2002,11272.161160642947,12254.058205907,10475.831069872434
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2003,400520.61314813595,435263.1277438975,372206.29231528693
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2003,11267.775340935079,12245.180339312557,10471.213577064762
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2004,406146.17682111356,440428.27146434475,377283.6070620954
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2004,11284.18383124957,12236.662224872125,10482.279094506288
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2005,413818.6428627169,447897.9862219754,385163.334434339
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2005,11360.948574033448,12296.560523903498,10574.247706291564
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2006,425674.30494605814,458310.62847852876,398199.07839240244
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2006,11554.141240868863,12439.993845302293,10808.377062629264
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2007,442794.97687649226,474249.36638772424,415775.3485417082
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2007,11890.257190028626,12734.893648378073,11164.706208520589
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2008,462352.80459031055,492021.60721124674,435829.70645364036
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2008,12291.787983318703,13080.541999547982,11586.66346429348
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2009,480621.1513674994,509486.9378156292,453562.5354876602
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2009,12660.90754367374,13421.313223605528,11948.107799135503
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2010,494983.7913300143,523804.35151371325,468392.8705774625
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2010,12929.620044886819,13682.450539911206,12235.03063004886
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2011,505424.241677155,534120.6290717585,479416.73447356815
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2011,13098.813652194167,13842.522797853204,12424.790797082507
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2012,515823.66289693717,544966.3761819573,489153.32196624926
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2012,13270.071029127706,14019.795989595426,12583.950278998422
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2013,525489.368363654,555306.6199857126,498305.9782859308
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2013,13425.205623880174,14186.976952216715,12730.724206522504
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2014,533590.0189702659,563879.7017783144,505067.5316218232
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2014,13544.17080740143,14313.016968440807,12820.18155204622
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2015,540719.4320909842,571127.4676243879,511321.3387002457
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2015,13645.26582383185,14412.624463837232,12903.393467813095
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2016,543659.5118772276,576690.675545648,513483.719770053
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2016,13649.365711757422,14478.66129648546,12891.758398513537
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2017,548307.1814114139,583666.6191096886,516691.2549623722
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2017,13704.463576739914,14588.242127264513,12914.25085081781
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2018,560859.842761388,598217.0923350495,525425.9076756334
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2018,13963.142116851986,14893.18656846316,13080.980418617879
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2019,577602.5436688563,619794.9346143699,537954.9889028369
+Prevalence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2019,14331.468893219178,15378.346101420733,13347.734136422176
+Prevalence,Oregon,Both,All ages,Asthma,Number,1990,284689.87866297446,338511.0618736164,243716.96950883965
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1990,9820.167664625917,11676.689735306021,8406.837343608713
+Prevalence,Oregon,Both,All ages,Asthma,Number,1991,264001.6891268254,311537.40827472525,228324.10159934618
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1991,8993.410408819336,10612.749409222708,7778.0273251260605
+Prevalence,Oregon,Both,All ages,Asthma,Number,1992,245929.97680995293,287218.59482385695,213564.53880085613
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1992,8259.513282178556,9646.183965078546,7172.525967385937
+Prevalence,Oregon,Both,All ages,Asthma,Number,1993,231363.94546023672,267705.74034130294,201690.33531517084
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1993,7652.344776767077,8854.346859171328,6670.892393813817
+Prevalence,Oregon,Both,All ages,Asthma,Number,1994,221404.72892031417,257616.43376190812,192653.84215500837
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1994,7205.844322119946,8384.391451621397,6270.117180409904
+Prevalence,Oregon,Both,All ages,Asthma,Number,1995,217407.4690088334,251440.78544119417,189888.12123961962
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1995,6957.503772787285,8046.642653609236,6076.825814473116
+Prevalence,Oregon,Both,All ages,Asthma,Number,1996,218407.58955607528,252767.22276227674,190863.13180937938
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1996,6869.64532634152,7950.370104036064,6003.280490711028
+Prevalence,Oregon,Both,All ages,Asthma,Number,1997,222066.6463449578,256960.8569598217,194866.11938808186
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1997,6862.654915640485,7941.011030549805,6022.061188032034
+Prevalence,Oregon,Both,All ages,Asthma,Number,1998,227310.7654275381,262887.5888210447,200214.09374955637
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1998,6902.359205386628,7982.660061295123,6079.560686187247
+Prevalence,Oregon,Both,All ages,Asthma,Number,1999,233001.60699834573,269402.8162044132,205211.39388404498
+Prevalence,Oregon,Both,All ages,Asthma,Rate,1999,6954.369923279839,8040.832277487939,6124.918896167386
+Prevalence,Oregon,Both,All ages,Asthma,Number,2000,238063.04374401158,275154.0646916167,209483.9029940247
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2000,6988.395126515171,8077.210534195328,6149.447909861248
+Prevalence,Oregon,Both,All ages,Asthma,Number,2001,242342.00597132815,278773.1631408136,214305.61287642102
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2001,7005.918565651526,8059.114933152355,6195.408286551365
+Prevalence,Oregon,Both,All ages,Asthma,Number,2002,246649.3012440347,282809.7793771756,217928.75834472233
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2002,7030.981550784692,8061.771637516457,6212.274154351437
+Prevalence,Oregon,Both,All ages,Asthma,Number,2003,251192.4387061016,287106.4863479794,221762.50055264344
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2003,7066.752306291707,8077.115835977624,6238.805078296897
+Prevalence,Oregon,Both,All ages,Asthma,Number,2004,256182.70166778355,290761.5559399512,226596.07609618054
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2004,7117.665670600881,8078.389101103564,6295.644090810494
+Prevalence,Oregon,Both,All ages,Asthma,Number,2005,261840.42018619186,296050.3940249385,231238.0625056722
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2005,7188.548896105439,8127.747166179432,6348.393872041189
+Prevalence,Oregon,Both,All ages,Asthma,Number,2006,271694.73994006694,304860.9633930408,242598.36724109115
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2006,7374.650908436837,8274.886665562084,6584.88371822899
+Prevalence,Oregon,Both,All ages,Asthma,Number,2007,287269.7500028639,319077.9659520842,258900.56942413843
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2007,7713.97912989879,8568.1167966359,6952.18897651704
+Prevalence,Oregon,Both,All ages,Asthma,Number,2008,305327.1920088075,337265.32665516,276597.69415417284
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2008,8117.21497621246,8966.299864977247,7353.4326589206
+Prevalence,Oregon,Both,All ages,Asthma,Number,2009,322224.8015652265,354463.0362267329,293698.9733789643
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2009,8488.303956844593,9337.549370325145,7736.853729892701
+Prevalence,Oregon,Both,All ages,Asthma,Number,2010,334336.26605187985,366461.69608657423,305695.46747387765
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2010,8733.297863474656,9572.45585491333,7985.162975258071
+Prevalence,Oregon,Both,All ages,Asthma,Number,2011,342442.92272034305,374702.1284163982,313893.5813783433
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2011,8874.912719544074,9710.957549088163,8135.014488919414
+Prevalence,Oregon,Both,All ages,Asthma,Number,2012,350065.61420930765,382239.7116923775,321299.1746258632
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2012,9005.7822072829,9833.49250754441,8265.737257845034
+Prevalence,Oregon,Both,All ages,Asthma,Number,2013,356949.9839778569,389321.418727327,327257.0465801415
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2013,9119.360392134842,9946.386006763274,8360.765044368522
+Prevalence,Oregon,Both,All ages,Asthma,Number,2014,362668.18008733547,395192.50136553496,332641.8307723044
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2014,9205.644039203838,10031.212260357699,8443.482099536555
+Prevalence,Oregon,Both,All ages,Asthma,Number,2015,367043.5218930382,399640.13027203595,335930.00134121143
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2015,9262.486472472865,10085.07460208151,8477.324642791305
+Prevalence,Oregon,Both,All ages,Asthma,Number,2016,369567.09026344423,405546.4706560138,337648.4093589916
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2016,9278.521316803455,10181.836186371153,8477.156235932489
+Prevalence,Oregon,Both,All ages,Asthma,Number,2017,372563.0043121948,410395.96057952364,338960.0769691577
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2017,9311.889932745982,10257.491939692829,8472.01383873044
+Prevalence,Oregon,Both,All ages,Asthma,Number,2018,380626.5718002531,421114.3932053791,343159.9711884199
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2018,9476.062485290468,10484.04551630596,8543.295635015309
+Prevalence,Oregon,Both,All ages,Asthma,Number,2019,393686.23206375184,441236.2822380903,349898.66158824414
+Prevalence,Oregon,Both,All ages,Asthma,Rate,2019,9768.139095566348,10947.950494276583,8681.682307835938
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1990,137727.63239470273,147097.79101374283,126904.17073074315
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1990,4750.813230592892,5074.029950187079,4377.4658929533925
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1991,141328.5960481925,150525.8950655831,130217.95243914233
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1991,4814.461873208097,5127.774583401738,4435.969681689158
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1992,145105.33712101585,154438.7268674659,133850.03446837756
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1992,4873.336202492267,5186.796389731359,4495.328921882288
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1993,148798.68018098443,158134.6781569796,137325.4797111405
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1993,4921.504951031734,5230.292369077355,4542.029724182696
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1994,152166.75636634976,161742.2868335486,140574.93984205954
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1994,4952.423386460317,5264.068861174566,4575.155810957555
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1995,155704.90962718282,165497.278483814,143699.59297315046
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1995,4982.889967449149,5296.266704573889,4598.694170061239
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1996,159230.3302046159,169647.95228564966,147547.4585457864
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1996,5008.323638959961,5335.992512491444,4640.858456763441
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1997,163184.97955675184,173845.18361603838,151694.08633437703
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1997,5043.000471012713,5372.438966137059,4687.890704843087
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1998,167237.5303850166,178132.64528790922,155414.12427162213
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1998,5078.217501788857,5409.050916133672,4719.196247901837
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1999,170796.30018350817,181693.20138527273,158809.0444975657
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1999,5097.7358839078615,5422.974335911506,4739.953757514308
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2000,174160.63690741122,185483.92344804207,162260.9839914817
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2000,5112.525350651562,5444.923018228092,4763.2083162347235
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2001,176353.78059624226,186635.93599380006,165275.42229810896
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2001,5098.250386473345,5395.499487412068,4777.983680060861
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2002,177719.4552235704,186999.87949073376,167179.05892340024
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2002,5066.068318823793,5330.615963908427,4765.603928490362
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2003,178931.28316775776,187524.9319152168,168580.7366991128
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2003,5033.842039620168,5275.6056349671635,4742.651952428664
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2004,180374.6419341216,188697.91630564295,170351.9572885421
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2004,5011.448424828892,5242.698559500336,4732.982634731905
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2005,183292.63546795456,191997.45036524365,173481.18777713197
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2005,5032.103414058398,5271.084803853806,4762.740603622539
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2006,186921.99129806084,195631.80750438146,177329.9972307632
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2006,5073.651529790921,5310.063372038692,4813.29460209434
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2007,190992.64297885765,199820.55160654397,181240.80251071497
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2007,5128.675267369537,5365.728778621409,4866.811657126535
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2008,195464.10754847556,204741.3724176868,185347.1923923567
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2008,5196.47192464509,5443.110793719282,4927.510700857495
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2009,199767.4742405815,209507.1090593779,189199.76313620384
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2009,5262.434901994745,5519.004167827236,4984.051787019277
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2010,204425.2345600891,214554.522803321,193641.22296010517
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2010,5339.852853255535,5604.443028942335,5058.1604524341055
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2011,208625.8813601379,218932.5388428639,197979.79334620698
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2011,5406.846996283942,5673.959205415883,5130.937944995472
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2012,213169.1509759998,224153.09977251862,201970.97271833287
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2012,5483.9860559781255,5766.558941238003,5195.9019071403
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2013,217655.49799289208,229192.82453946857,205558.0684901793
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2013,5560.664005100208,5855.419694867943,5251.598801554699
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2014,221455.2396837225,232805.41848116557,208769.6020714988
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2014,5621.2213231775295,5909.324089087177,5299.220467628676
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2015,225214.1775962118,237294.1741372613,212482.86319955895
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2015,5683.367636173448,5988.211061748458,5362.087950408661
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2016,225506.41479986752,237834.5692076806,212068.387638251
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2016,5661.667751056943,5971.184064828814,5324.286461543417
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2017,227568.8531253042,241140.10914195894,212514.38249244116
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2017,5687.886579979209,6027.088381589947,5311.613112387384
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2018,234070.63090317667,247654.8923416883,218801.8907695809
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2018,5827.412190165934,6165.605368847667,5447.282303560053
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2019,240524.5014774497,254887.0180888502,224556.25164934917
+Prevalence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2019,5967.891673547319,6324.254300929787,5571.687608660487
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1990,64572.67496880716,75157.19419118916,55802.42082856935
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1990,2227.3868594315763,2592.4920535515857,1924.8634029497503
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1991,61205.8972076064,70454.23330402546,53326.6948185794
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1991,2085.023602873919,2400.0749284502417,1816.6128172723602
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1992,58322.73611519626,66785.48283410385,51143.725481949856
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1992,1958.7584232105007,2242.9782236398946,1717.652664378908
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1993,56065.422402992845,63997.71106333041,49357.96962163
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1993,1854.3595521304662,2116.719392065748,1632.5110650865108
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1994,54627.57121118839,62122.976591145656,48079.43714346626
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1994,1777.9104166515756,2021.8560837677976,1564.7946673969245
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1995,54349.124235177755,61788.9978014771,47743.18904251442
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1995,1739.288160787936,1977.3800195569877,1527.8841127334695
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1996,54975.80034670561,62378.63376045327,48471.30172056629
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1996,1729.171823567362,1962.0155634108426,1524.5837015241925
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1997,56051.345141994294,63592.45737801827,49342.861223422246
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1997,1732.1873662622756,1965.2347500443275,1524.871180342269
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1998,57407.81613234049,65126.28940546799,50470.93361922174
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1998,1743.2054632208753,1977.579206796542,1532.564956243329
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,1999,58811.89906825353,66840.76742276494,51676.554898702074
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,1999,1755.3514213064457,1994.988054383332,1542.3836932112006
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2000,60122.873635180076,68364.09184581116,52824.46999168031
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2000,1764.920713842419,2006.8435603034247,1550.6744047495258
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2001,61132.62026809345,69354.73485465067,53683.898220605806
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2001,1767.2964189040852,2004.9913451303314,1551.959668373739
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2002,61933.34977738458,70077.05160683938,54412.51383736795
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2002,1765.4712073651897,1997.6154584504052,1551.0823626612791
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2003,62709.97041207556,70800.47408328792,54945.45505516984
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2003,1764.208470285675,1991.8171744811675,1545.770737492892
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2004,63620.13872655645,71847.1613607978,55870.616852662686
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2004,1767.5934964574622,1996.1694158844225,1552.2842447152682
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2005,64882.91710962779,73405.85918696734,57053.21140590084
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2005,1781.2911460837627,2015.2794119827518,1566.334943930811
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2006,68172.41119857294,76517.88945146662,60190.07696344976
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2006,1850.413939875268,2076.936502633084,1633.7482494335504
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2007,74246.29107637556,82554.21176402297,65873.49969527818
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2007,1993.716149472201,2216.8065611731467,1768.8837820818385
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2008,81507.03910533732,90045.34538039814,73028.48324893115
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2008,2166.8890809878926,2393.8825142010514,1941.4841305755863
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2009,88189.99270528769,97168.80609666003,78893.96888961697
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2009,2323.171464139631,2559.6985622014085,2078.2881548655423
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2010,92605.0974244449,101923.68870634605,82560.19569316276
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2010,2418.965519457801,2662.3792367127294,2156.5796291547535
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2011,95076.36992825467,104191.58771062834,85210.29052736647
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2011,2464.0441627506852,2700.278457200587,2208.3501835281063
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2012,97495.652438523,106566.78309390179,87703.90524449904
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2012,2508.171543787527,2741.5353011524644,2256.269217255598
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2013,99801.66979497498,109317.68056994361,89792.03953011033
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2013,2549.7336754430953,2792.8487774114446,2294.0075797025124
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2014,101858.34377622424,111461.44868914406,91679.72964104297
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2014,2585.4809070952138,2829.2375153484686,2327.1160885486206
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2015,103727.79283462006,113820.36363304907,93354.09558960272
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2015,2617.6113203003783,2872.301281890724,2355.8270231523593
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2016,105036.7132953061,115716.41219945694,94631.30398713435
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2016,2637.100026040581,2905.229457880869,2375.857034931406
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2017,106372.6864707568,117573.67122473566,95099.59173500196
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2017,2658.6932593987635,2938.6521816754785,2376.9320105207003
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2018,107094.99794833643,118451.59582203945,95345.8451192459
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2018,2666.232385249925,2948.965749246388,2373.7259902520573
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Number,2019,106357.58783508575,119264.28843149787,94043.41136937421
+Incidence,Oregon,Both,All ages,Chronic respiratory diseases,Rate,2019,2638.9434712916136,2959.184405371744,2333.404240382108
+Incidence,Oregon,Both,All ages,Asthma,Number,1990,36852.32263885917,46209.78537969715,29300.760783775884
+Incidence,Oregon,Both,All ages,Asthma,Rate,1990,1271.1937243575535,1593.9725089848196,1010.7081605750006
+Incidence,Oregon,Both,All ages,Asthma,Number,1991,34565.55507396908,43323.741528631756,27812.298605998785
+Incidence,Oregon,Both,All ages,Asthma,Rate,1991,1177.5008857595396,1475.8549057063776,947.4462705282948
+Incidence,Oregon,Both,All ages,Asthma,Number,1992,32580.31071438413,40175.62730970591,26234.03242469571
+Incidence,Oregon,Both,All ages,Asthma,Rate,1992,1094.2037752921444,1349.2910937034744,881.0651798837883
+Incidence,Oregon,Both,All ages,Asthma,Number,1993,30970.184816458055,37610.90307170062,25133.086987090326
+Incidence,Oregon,Both,All ages,Asthma,Rate,1993,1024.3364909095778,1243.977738613062,831.2749272455136
+Incidence,Oregon,Both,All ages,Asthma,Number,1994,29842.19771354915,36052.174780056965,24438.141991764656
+Incidence,Oregon,Both,All ages,Asthma,Rate,1994,971.2449774781163,1173.3550597848755,795.3644331503762
+Incidence,Oregon,Both,All ages,Asthma,Number,1995,29337.254508505226,35534.25391668886,24031.48396268351
+Incidence,Oregon,Both,All ages,Asthma,Rate,1995,938.8548602157392,1137.1720889612077,769.0588602972709
+Incidence,Oregon,Both,All ages,Asthma,Number,1996,29346.234332893142,35564.44635290959,23986.537242029914
+Incidence,Oregon,Both,All ages,Asthma,Rate,1996,923.0367037173077,1118.6201595318742,754.4563986752906
+Incidence,Oregon,Both,All ages,Asthma,Number,1997,29601.126389945293,36053.30656505679,24226.308216379883
+Incidence,Oregon,Both,All ages,Asthma,Rate,1997,914.7808501277254,1114.1763321783883,748.6797135248218
+Incidence,Oregon,Both,All ages,Asthma,Number,1998,30030.108376940683,36724.91721822275,24568.011927902222
+Incidence,Oregon,Both,All ages,Asthma,Rate,1998,911.8731996897467,1115.1630674046035,746.0150115180622
+Incidence,Oregon,Both,All ages,Asthma,Number,1999,30540.280080820226,37498.67420464795,24908.238451867237
+Incidence,Oregon,Both,All ages,Asthma,Rate,1999,911.5319330999569,1119.2182552351442,743.4330885656842
+Incidence,Oregon,Both,All ages,Asthma,Number,2000,31037.58792719289,38198.68471986989,25294.102890867918
+Incidence,Oregon,Both,All ages,Asthma,Rate,2000,911.1154961221779,1121.3311311884092,742.514178564354
+Incidence,Oregon,Both,All ages,Asthma,Number,2001,31507.99854813481,38521.77889703639,25867.462555715716
+Incidence,Oregon,Both,All ages,Asthma,Rate,2001,910.8716877626875,1113.6346126828726,747.8081871899066
+Incidence,Oregon,Both,All ages,Asthma,Number,2002,31969.41168357501,38699.6034556232,26358.213562726054
+Incidence,Oregon,Both,All ages,Asthma,Rate,2002,911.319604811136,1103.1703578594713,751.3668692205626
+Incidence,Oregon,Both,All ages,Asthma,Number,2003,32443.726630654393,38923.77075462776,26869.23164007079
+Incidence,Oregon,Both,All ages,Asthma,Rate,2003,912.7336044542549,1095.0355359687583,755.9073260278997
+Incidence,Oregon,Both,All ages,Asthma,Number,2004,32969.694972794015,39384.9481444993,27440.343122638198
+Incidence,Oregon,Both,All ages,Asthma,Rate,2004,916.0152678159892,1094.2537943487991,762.3902276071296
+Incidence,Oregon,Both,All ages,Asthma,Number,2005,33544.816610763555,39971.51530656586,28092.354212886592
+Incidence,Oregon,Both,All ages,Asthma,Rate,2005,920.9370892618214,1097.3752334660685,771.2455614089273
+Incidence,Oregon,Both,All ages,Asthma,Number,2006,34632.62326202342,41124.18925417249,29142.559190201704
+Incidence,Oregon,Both,All ages,Asthma,Rate,2006,940.0384661741009,1116.2400115251082,791.0208370379331
+Incidence,Oregon,Both,All ages,Asthma,Number,2007,36447.862404334366,43121.81187347915,30774.919086290316
+Incidence,Oregon,Both,All ages,Asthma,Rate,2007,978.7248741423525,1157.938685963711,826.3908175281271
+Incidence,Oregon,Both,All ages,Asthma,Number,2008,38586.80265745668,45342.69951581696,32763.382336019786
+Incidence,Oregon,Both,All ages,Asthma,Rate,2008,1025.8417219722344,1205.449266245091,871.0243461107881
+Incidence,Oregon,Both,All ages,Asthma,Number,2009,40591.581227608935,47389.56478606576,34592.57893643794
+Incidence,Oregon,Both,All ages,Asthma,Rate,2009,1069.2959631760227,1248.373894041419,911.2654371646389
+Incidence,Oregon,Both,All ages,Asthma,Number,2010,42013.491256247224,48979.888196086016,35888.47399302722
+Incidence,Oregon,Both,All ages,Asthma,Rate,2010,1097.447003755075,1279.418347244835,937.4535911040996
+Incidence,Oregon,Both,All ages,Asthma,Number,2011,43018.05236001664,49870.66927518116,36849.773955140845
+Incidence,Oregon,Both,All ages,Asthma,Rate,2011,1114.8761873280346,1292.4718477652111,955.0161673333232
+Incidence,Oregon,Both,All ages,Asthma,Number,2012,44041.89752718226,50712.98857883968,37810.15237266898
+Incidence,Oregon,Both,All ages,Asthma,Rate,2012,1133.0211281137845,1304.641506287401,972.7033552311233
+Incidence,Oregon,Both,All ages,Asthma,Number,2013,44986.88026295917,51550.863814643504,38623.56742313978
+Incidence,Oregon,Both,All ages,Asthma,Rate,2013,1149.3250944120848,1317.0217866735084,986.7551387350121
+Incidence,Oregon,Both,All ages,Asthma,Number,2014,45720.55392356366,52170.98063665819,39269.5427884751
+Incidence,Oregon,Both,All ages,Asthma,Rate,2014,1160.5295633992382,1324.2614138401016,996.78287851427
+Incidence,Oregon,Both,All ages,Asthma,Number,2015,46114.03773718068,52708.90106523044,39703.23393114099
+Incidence,Oregon,Both,All ages,Asthma,Rate,2015,1163.7057331206936,1330.1296821085994,1001.9265979792639
+Incidence,Oregon,Both,All ages,Asthma,Number,2016,45316.496083542195,52136.61096366965,39035.07460817515
+Incidence,Oregon,Both,All ages,Asthma,Rate,2016,1137.7367898593359,1308.965730329121,980.0325337323256
+Incidence,Oregon,Both,All ages,Asthma,Number,2017,44420.58711085579,51593.027919295695,38194.97581027727
+Incidence,Oregon,Both,All ages,Asthma,Rate,2017,1110.2541399350223,1289.523091989535,954.6503721855332
+Incidence,Oregon,Both,All ages,Asthma,Number,2018,44878.55711969851,52409.895106612224,38509.719931560365
+Incidence,Oregon,Both,All ages,Asthma,Rate,2018,1117.2945953419055,1304.7944564900354,958.736303239508
+Incidence,Oregon,Both,All ages,Asthma,Number,2019,46197.45175745729,54178.05382204858,39109.378977796994
+Incidence,Oregon,Both,All ages,Asthma,Rate,2019,1146.2507394835268,1344.2653630192262,970.3815441899322
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1990,8532.315956437984,9127.648671782237,7859.48201956417
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1990,294.315954094652,314.85151759404346,271.1070430452599
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1991,8745.825786432995,9342.96603246809,8069.380826337802
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1991,297.93294475340116,318.2749634805505,274.8893530050507
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1992,8987.187290323533,9580.073918683715,8298.980320054417
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1992,301.83304108232403,321.74503003660755,278.71973588237177
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1993,9236.636953133651,9857.677379263325,8534.271525391821
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1993,305.50105982417995,326.0419243551721,282.2703770932541
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1994,9475.601861892013,10124.998765245808,8757.755430353125
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1994,308.39319561127496,329.5284848693395,285.0301461493989
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1995,9736.92606213255,10421.079212157792,9012.083185065285
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1995,311.6024491775191,333.4968125320344,288.4059275728792
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1996,10011.596726651353,10683.491162081702,9281.978059581632
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1996,314.89802530327603,336.0313406680514,291.94909080683914
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1997,10315.449553974015,11007.604932059812,9581.76479745722
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1997,318.78434584297764,340.1744266407433,296.1108584745996
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1998,10636.727219408234,11329.930990657394,9888.901911710962
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1998,322.9873952515162,344.0367345676325,300.2794566860161
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,1999,10939.069160879197,11636.580350268978,10205.80861378443
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,1999,326.4970338236184,347.3155633570988,304.6114976664374
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2000,11233.45751344598,11937.57502613701,10501.024703675692
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2000,329.7607159273996,350.4302466399244,308.2599831895521
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2001,11472.687772770803,12140.93695012656,10759.919140340986
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2001,331.6664642723462,350.98502730624284,311.06087848073196
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2002,11667.232771156565,12291.790103365003,11011.564181251179
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2002,332.5859751029656,350.38959772835517,313.8954953983722
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2003,11865.828325624087,12469.30555784467,11226.718092822632
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2003,333.81924280083285,350.7967606933162,315.83926802576184
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2004,12068.147224879738,12664.463521815003,11431.03147906788
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2004,335.2960080875197,351.8637935308166,317.5946689938092
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2005,12313.241518835395,12932.985395316859,11651.55678168268
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2005,338.04688620940294,355.06129199129475,319.8810389217816
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2006,12577.232761305197,13182.671307927449,11934.783949038834
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2006,341.38570746434476,357.81921636788627,323.9476233923108
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2007,12926.835371213467,13534.916998905303,12289.573059125076
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2007,347.1209142911289,363.4495704940286,330.00867683601257
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2008,13303.14644030819,13932.264333594148,12628.975477894513
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2008,353.6681381227984,370.39342600687496,335.7451008832132
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2009,13667.306049566245,14333.519338976863,12951.983720065298
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2009,360.03512906642413,377.58505344573007,341.19153499660797
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2010,14044.592279165126,14772.012052390335,13306.262899474566
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2010,366.8630064976938,385.86415652660264,347.576883366823
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2011,14379.672985479448,15103.355685055345,13620.740043262767
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2011,372.67040494785095,391.425708004954,353.00153993334357
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2012,14742.16791543259,15465.132960013287,13949.203876482883
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2012,379.2567682188812,397.8557550107669,358.8569884543977
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2013,15085.568519134144,15836.763840762173,14233.426566117763
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2013,385.40619756621777,404.5977402761246,363.6356696950187
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2014,15388.157372545176,16168.936129146588,14468.636464616848
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2014,390.59919499082605,410.41778316945783,367.25890039162715
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2015,15676.8826143878,16498.930570632518,14714.699106394646
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2015,395.6122489164308,416.3569498041353,371.3311727081979
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2016,15713.469049509793,16563.249083384304,14706.714787637462
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2016,394.50957993277126,415.84454824198406,369.23354446947735
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2017,15795.83972187333,16770.927910600745,14729.787802444698
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2017,394.8033465022357,419.17483208468946,368.15830117724795
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2018,16149.3763897989,17137.975334248524,15033.413396290747
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2018,402.05416832674007,426.66628441256347,374.2712024456701
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Number,2019,16511.833343334813,17541.681204129094,15357.716514842308
+Incidence,Oregon,Both,All ages,Chronic obstructive pulmonary disease,Rate,2019,409.69145396577204,435.24402942358216,381.0555180475886
