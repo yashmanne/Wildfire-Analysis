@@ -3,6 +3,8 @@
 The goal of this work is to explore the impact of wildfires on Redmond, Oregon. This project focused on the healthcare impact of wildfires on Redmond, OR, Deschutes County, and the greater Oregon area. Specifically, I investigated the respiratory health of citizens by tracking the county-level premature mortality rate, asthma-related hospitalizations, and COPD-related hospitalizations from 2000–2021. Additionally, I investigated the prevalence, incidence, and mortality of chronic respiratory illnesses at the state level. By combining data from both the state & country levels, I approximated the impact on the city itself without city-specific data resolution.
 I found that the rates of occurrence for asthma, COPD, and all chronic respiratory conditions have increased over the past 30 years and are expected to continue increasing significantly over the next 30 years. This follows what I expected and it is in line with my initial expectation that more smoke exposure will lead to more respiratory illnesses. Surprisingly, I see that the county’s premature mortality rate and asthma/COPD hospitalization rates have steadily dropped and are projected to drop in the future. I hypothesize that this is likely due to advances in modern medicine & a better medical infrastructure in Redmond. In my analysis, I validate a link between the respiratory health of a city and the smoke effect of wildfires but can’t validate the effect size. 
 
+A full report can be found [here](./final_report.pdf).
+
 A secondary goal of this work is to develop the reproducibility & professionalism skills required for real-world data-driven analysis as part of the Fall 2023 DATA 512 course at the University of Washington.
 
 ## Data Sources
@@ -67,17 +69,17 @@ The Oregon Tracking Data Explorer is part of a larger National Environmental Pub
 
 The first tracks the annual age-adjusted asthma-related hospitalization rate per 10,000 and the raw counts for adults older than 25 from 2000 to 2021. Additionally, I have access to the crude rates for 20-year age bins of 25-44, 45-64, and 65-84. I also have access to similar data for emergency department visits but due to low data history (2018—), I ignore it for my analysis. The second tracks the same metrics for COPD-related annual hospitalizations. Age-adjusted rates allow for fairer comparisons to be made between groups with different age distributions.
 The IHME data is provided under the [IHME FREE-OF-CHARGE NON-COMMERCIAL USER AGREEMENT](https://www.healthdata.org/about/ihme-free-charge-non-commercial-user-agreement). The data provided by IHME arises from the [Global Burden of Disease Study in 2019](https://www.healthdata.org/research-analysis/gbd) shown in an interactive [query tool](https://vizhub.healthdata.org/gbd-results/). From this query tool, I accessed the raw annual count and rate per 100,000 for the deaths, incidence, and prevalence of asthma, COPD, and all chronic respiratory illness diseases from 1990 to 2019 for the state of Oregon. Incidence monitors the number of new cases in a given year whereas prevalence tracks the total cases in a given year. In the data set, I have access to both the estimated metric as well as lower and upper bound values.
-#### Storage Locations:
-* Asthma Hospitalizations and Emergency Department Visits:
+#### List of Data Sets:
+* [Asthma Hospitalizations and Emergency Department Visits](https://visual-data.dhsoha.state.or.us/t/OHA/views/Asthma/About/):
   * Citation: McGeehin MA, Qualters JR, Niskar AS. National Environmental Public Health Tracking Program: bridging the information gap. Environ Health Perspect. 2004;14:1409–1413.
   * Storage Location: [`./input/deschutes_hospitalizations_asthma.csv`](./input/deschutes_hospitalizations_asthma.csv)
-* Chronic Obstructive Pulmonary Disorder (COPD) Hospitalizations & ER Visits:
+* [Chronic Obstructive Pulmonary Disorder (COPD) Hospitalizations & ER Visits](https://visual-data.dhsoha.state.or.us/t/OHA/views/COPD/About/):
   * Citation: McGeehin MA, Qualters JR, Niskar AS. National Environmental Public Health Tracking Program: bridging the information gap. Environ Health Perspect. 2004;14:1409–1413.
   * Storage Location: [`./input/deschutes_hospitalizations_copd.csv`](./input/deschutes_hospitalizations_copd.csv)
-* IHME Query Tool for Oregon Respiratory Illness Incidence, Prevalence, & Mortality Rates
+* [IHME Query Tool for Oregon Respiratory Illness Incidence, Prevalence, & Mortality Rates](https://vizhub.healthdata.org/gbd-results/)
   * Citation: Global Burden of Disease Collaborative Network. Global Burden of Disease Study 2019 (GBD 2019) Results. Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2020. Available from https://vizhub.healthdata.org/gbd-results/
   * Storage Location: [`./input/IHME-GBD_2019_DATA-Chronic_Respiratory_Illness_Oregon.csv`](./input/IHME-GBD_2019_DATA-Chronic_Respiratory_Illness_Oregon.csv) 
-* Age-Adjusted Death Rate Data:
+* [Age-Adjusted Death Rate Data](https://fred.stlouisfed.org/series/CDC20N2UAA041017):
   * Citation: Centers for Disease Control and Prevention, Age-Adjusted Premature Death Rate for Deschutes County, OR [CDC20N2UAA041017], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CDC20N2UAA041017, November 16, 2023.
   * Storage Location: [`./input/deshutes_age_adjusted_premature_death_rate.csv`](./input/deshutes_age_adjusted_premature_death_rate.csv) 
 
@@ -114,19 +116,26 @@ Note that some portions of the code were developed by Dr. David W. McDonald for 
 * [`./output/figure2-annual_burn_over_time.png`](./outptut/figure2-annual_burn_over_time.png): a time series graph of total acres burned per year for the fires occurring within 1250 miles from Redmond, OR.
 * [`./output/figure3-comparing_smoke_AQI.png`](./outptut/figure3-comparing_smoke_AQI.png): a time series graph containing my annual fire smoke estimate & AQI estimate for Redmond, OR.
 * [`./output/ARIMA_forecast_smoke_estimate.png`](./output/ARIMA_forecast_smoke_estimate.png): a time series graph containing my ARIMA forecast of the smoke estimate until 2050 along with a 95% confidence interval.
+* [`./output/Forecasted_Disease_Patterns_2020-2050.png`](./output/Forecasted_Disease_Patterns_2020-2050.png): a set of subplots each containing the VARMAX forecast of the respiratory health indicators (rates per 10,000) until 2050 along with a 95% confidence interval
+* [`./output/Respiratory_Health_Indicators_Correlation_Smoke.png`](./output/Respiratory_Health_Indicators_Correlation_Smoke.png): a heatmap tracking the Pearon and Spearman Correlation Coefficients for each respiratory health indicator with respect to the estimated annual smoke index.
+* [`./output/Respiratory_Health_State_Occurence.png`](./output/Respiratory_Health_State_Occurence.png): a set of 3 time series subplots tracking the state incidence and prevalence rates (per 10,000) across dual-axis plots for Asthma, COPD, and all Chronic RIs in Oregon
+* [`./output/Respiratory_Health_State_Mortality.png`](./output/Respiratory_Health_State_Mortality.png): a set of 3 time series subplots tracking the state mortality rates (per 10,000) for Asthma, COPD, and all Chronic RIs in Oregon
+* [`./output/Respiratory_Health_County_Premature_Mortality.png`](./output/Respiratory_Health_County_Premature_Mortality.png): a time series graph showcasing the premature death rate (rate per 10,000) for Deschutes County.
+* [`./output/Asthma_County_Hospitalization.png`](./output/Asthma_County_Hospitalization.png): time series plot showing the overall crude, overall age-adjusted, and individual hospitalization rates for each age group per 10,000 for asthma
+* * [`./output/COPD_County_Hospitalization.png`](./output/COPD_County_Hospitalization.png): time series plot showing the overall crude, overall age-adjusted, and individual hospitalization rates for each age group per 10,000 for COPD
 
 ## Intermediate Files
 
 ### Wildfire Data
 We store the DataFrames containing the JSON outputs of the API calls for particulate and gaseous AQI data from 1963-2023 just in case.
-  * [./intermediate/gaseous_AQI_1963-2023.csv](./intermediate/gaseous_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for Ozone & Carbon Monoxide, or (if they were present but wasn't) sulfur dioxide and nitrous oxide. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
+  * [`./intermediate/gaseous_AQI_1963-2023.csv`](./intermediate/gaseous_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for Ozone & Carbon Monoxide, or (if they were present but wasn't) sulfur dioxide and nitrous oxide. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
 }
-  * [./intermediate/particulate_AQI_1963-2023.csv](./intermediate/particulate_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for pollutants of `Acceptable PM2.5 AQI & Speciation Mass`, `PM2.5 - Local Conditions`, & `PM10 Total 0-10um STP`. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
+  * [`./intermediate/particulate_AQI_1963-2023.csv`](./intermediate/particulate_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for pollutants of `Acceptable PM2.5 AQI & Speciation Mass`, `PM2.5 - Local Conditions`, & `PM10 Total 0-10um STP`. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
 
 We also store the Wildfire polygon subset fires within 1250 miles of Redmond, OR after 1963 in the following `./intermediate/redmond_fire_subset.csv` file as stated above but this can't be tracked by Git as it is too large.
 
 ### Respiratory Health Data
- * [./intermediate/combined_health_data.csv](./intermediate/combined_health_data.csv): The data contains rows from 1990 to 2021 with 23 other columns denoting the cleaned annual rates per 10,000 for the following variables (with OR denoting state-level data and DC denoting data for Deschutes County). Note that all state data exists from 1990-2019 while all county data exists from 2000-2021 except for the premature death rate, which also exists for 1999.
+ * [`./intermediate/combined_health_data.csv`](./intermediate/combined_health_data.csv): The data contains rows from 1990 to 2021 with 23 other columns denoting the cleaned annual rates per 10,000 for the following variables (with OR denoting state-level data and DC denoting data for Deschutes County). Note that all state data exists from 1990-2019 while all county data exists from 2000-2021 except for the premature death rate, which also exists for 1999.
    * 'Deaths: Asthma (OR)': rate of people dying due to Asthma in Oregon
    * 'Deaths: Chronic obstructive pulmonary disease (OR)': rate of people dying due to COPD in Oregon
    * 'Deaths: Chronic respiratory diseases (OR)': rate of people dying due to any chronic respiratory illness in Oregon
