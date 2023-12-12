@@ -1,6 +1,9 @@
 # Analysis of Wildfire Impact on Redmond, OR
 
-The goal of this work is to explore the impact of wildfires on Redmond, Oregon. Specifically, we will be looking at the wildfire prevalence & air quality as a way to measure the smoke impacts over the past 60 years. A secondary goal of this work is to develop the reproducibility & professionalism skills required for real-world data-driven analysis as part of the Fall 2023 DATA 512 course at the University of Washington.
+The goal of this work is to explore the impact of wildfires on Redmond, Oregon. This project focused on the healthcare impact of wildfires on Redmond, OR, Deschutes County, and the greater Oregon area. Specifically, I investigated the respiratory health of citizens by tracking the county-level premature mortality rate, asthma-related hospitalizations, and COPD-related hospitalizations from 2000–2021. Additionally, I investigated the prevalence, incidence, and mortality of chronic respiratory illnesses at the state level. By combining data from both the state & country levels, I approximated the impact on the city itself without city-specific data resolution.
+I found that the rates of occurrence for asthma, COPD, and all chronic respiratory conditions have increased over the past 30 years and are expected to continue increasing significantly over the next 30 years. This follows what I expected and it is in line with my initial expectation that more smoke exposure will lead to more respiratory illnesses. Surprisingly, I see that the county’s premature mortality rate and asthma/COPD hospitalization rates have steadily dropped and are projected to drop in the future. I hypothesize that this is likely due to advances in modern medicine & a better medical infrastructure in Redmond. In my analysis, I validate a link between the respiratory health of a city and the smoke effect of wildfires but can’t validate the effect size. 
+
+A secondary goal of this work is to develop the reproducibility & professionalism skills required for real-world data-driven analysis as part of the Fall 2023 DATA 512 course at the University of Washington.
 
 ## Data Sources
 
@@ -50,6 +53,33 @@ In this project, we used the US Environmental Protection Agency (EPA) Air Qualit
 
 Specifically, we used the maximal daily average sensor data for monitoring stations in Deschutes County, all of which were <17 miles from Redmond, OR. These daily max values were then averaged for the fire season to get the annual estimate for 1983-2023. There was no data available before 1983. Finding nearby monitoring stations requires the Federal Information Processing Series (FIPS) of the desired city, county, and state. Information was gathered from [here](https://www.census.gov/library/reference/code-lists/ansi.html#cou). A detailed walkthrough of the data collection process can be found in [`./analysis_part1-AQI.ipynb`](./analysis_part1-AQI.ipynb). The final data can be found as [`./output/final_annual_AQI_1983-2023.csv`](./output/final_annual_AQI_1983-2023.csv).
 
+### Respiratory Health Data
+I  incorporate health data aggregated from three main sources:
+* [Federal Reserve Economic Database (FRED)](https://fred.stlouisfed.org/)
+* [Oregon Health Authority’s Oregon Tracking Data Explorer](https://www.oregon.gov/oha/PH/HEALTHYENVIRONMENTS/TRACKINGASSESSMENT/ENVIRONMENTALPUBLICHEALTHTRACKING/Pages/Data-Explorer.aspx)
+* [Institute for Health Metrics and Evaluation (IHME) at the University of Washington](https://www.ihmeclientservices.org/ihmedata.html)
+
+FRED is an online database of 1000s of economic time series data aggregated from national, international, public, and private sources. It is maintained by the Research Department at the Federal Reserve Bank of St. Louis. The terms of use for this database can be found [here](https://fred.stlouisfed.org/legal/) but generally, all data is meant for personal, non-commercial, or educational use. From this database, I accessed the annual [Age-Adjusted Death Rate Data](https://fred.stlouisfed.org/series/CDC20N2UAA041017) for Deschutes County from 1999 to 2020. This data was aggregated from the Centers for Disease Control and Prevention (CDC) and more information can be found [here](https://www.cdc.gov/nchs/nvss/deaths.htm). This specific data set was provided under the [public domain](https://www.cdc.gov/other/agencymaterials.html) with citation. The premature death rate is defined as the total number of deaths where the deceased is younger than 75 years of age per 100,000. 
+
+The Oregon Tracking Data Explorer is part of a larger National Environmental Public Health Tracking Network funded by the CDC. As such, data from this source is provided under the [public domain](https://www.cdc.gov/other/agencymaterials.html) with citation. The database asks that users only use the data for statistical analysis and reporting purposes without attempting to learn or disclose the identities of individuals within the data. From this source, I downloaded two annual data sets:
+* [Asthma Hospitalizations and Emergency Department Visits](https://visual-data.dhsoha.state.or.us/t/OHA/views/Asthma/About/)
+* [Chronic Obstructive Pulmonary Disorder (COPD) Hospitalizations](https://visual-data.dhsoha.state.or.us/t/OHA/views/COPD/About/)
+The first tracks the annual age-adjusted asthma-related hospitalization rate per 10,000 and the raw counts for adults older than 25 from 2000 to 2021. Additionally, I have access to the crude rates for 20-year age bins of 25-44, 45-64, and 65-84. I also have access to similar data for emergency department visits but due to low data history (2018—), I ignore it for my analysis. The second tracks the same metrics for COPD-related annual hospitalizations. Age-adjusted rates allow for fairer comparisons to be made between groups with different age distributions.
+The IHME data is provided under the [IHME FREE-OF-CHARGE NON-COMMERCIAL USER AGREEMENT](https://www.healthdata.org/about/ihme-free-charge-non-commercial-user-agreement). The data provided by IHME arises from the [Global Burden of Disease Study in 2019](https://www.healthdata.org/research-analysis/gbd) shown in an interactive [query tool](https://vizhub.healthdata.org/gbd-results/). From this query tool, I accessed the raw annual count and rate per 100,000 for the deaths, incidence, and prevalence of asthma, COPD, and all chronic respiratory illness diseases from 1990 to 2019 for the state of Oregon. Incidence monitors the number of new cases in a given year whereas prevalence tracks the total cases in a given year. In the data set, I have access to both the estimated metric as well as lower and upper bound values.
+#### Storage Locations:
+* Asthma Hospitalizations and Emergency Department Visits:
+  * Citation: McGeehin MA, Qualters JR, Niskar AS. National Environmental Public Health Tracking Program: bridging the information gap. Environ Health Perspect. 2004;14:1409–1413.
+  * Storage Location: [`./input/deschutes_hospitalizations_asthma.csv`](./input/deschutes_hospitalizations_asthma.csv)
+* Chronic Obstructive Pulmonary Disorder (COPD) Hospitalizations & ER Visits:
+  * Citation: McGeehin MA, Qualters JR, Niskar AS. National Environmental Public Health Tracking Program: bridging the information gap. Environ Health Perspect. 2004;14:1409–1413.
+  * Storage Location: [`./input/deschutes_hospitalizations_copd.csv`](./input/deschutes_hospitalizations_copd.csv)
+* IHME Query Tool for Oregon Respiratory Illness Incidence, Prevalence, & Mortality Rates
+  * Citation: Global Burden of Disease Collaborative Network. Global Burden of Disease Study 2019 (GBD 2019) Results. Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2020. Available from https://vizhub.healthdata.org/gbd-results/
+  * Storage Location: [`./input/IHME-GBD_2019_DATA-Chronic_Respiratory_Illness_Oregon.csv`](./input/IHME-GBD_2019_DATA-Chronic_Respiratory_Illness_Oregon.csv) 
+* Age-Adjusted Death Rate Data:
+  * Citation: Centers for Disease Control and Prevention, Age-Adjusted Premature Death Rate for Deschutes County, OR [CDC20N2UAA041017], retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/CDC20N2UAA041017, November 16, 2023.
+  * Storage Location: [`./input/deshutes_age_adjusted_premature_death_rate.csv`](./input/deshutes_age_adjusted_premature_death_rate.csv) 
+
 ## API Documentation
 ### EPA AQS API 
 * [AQS API ](https://aqs.epa.gov/aqsweb/documents/data_api.html)
@@ -62,6 +92,11 @@ The code for accessing and analyzing the data can be found in the following file
 * [`analysis-part1-AQI.ipynb`](./analysis-part1-AQI.ipynb): An interactive Jupyter Notebook providing a detailed walkthrough of the entire data acquisition, analysis, and storage process of the EPA AQS AQI data.
 
 Note that some portions of the code were developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. This code was provided under the [Creative Commons](https://creativecommons.org) [CC-BY license](https://creativecommons.org/licenses/by/4.0/). The rest of the code lies under the standard [MIT license](./LICENSE).
+
+
+
+
+
 
 ## Output Files
 
@@ -84,7 +119,7 @@ Note that some portions of the code were developed by Dr. David W. McDonald for 
 
 ## Intermediate Files
 We store the DataFrames containing the JSON outputs of the API calls for particulate and gaseous AQI data from 1963-2023 just in case.
-  * [./intermediate/gaseous_AQI_1963-2023.csv](./intermediate/gaseous_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for Ozone & Carbon Monoxide, or (if they were present but wasn't) surfur dioxide and nitrous oxide. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
+  * [./intermediate/gaseous_AQI_1963-2023.csv](./intermediate/gaseous_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for Ozone & Carbon Monoxide, or (if they were present but wasn't) sulfur dioxide and nitrous oxide. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
 }
   * [./intermediate/particulate_AQI_1963-2023.csv](./intermediate/particulate_AQI_1963-2023.csv): Each row denotes an AQI/pollutant measurement by a sensor in the Deschutes County for pollutants of `Acceptable PM2.5 AQI & Speciation Mass`, `PM2.5 - Local Conditions`, & `PM10 Total 0-10um STP`. The data contains 32 attributes as present in the "Data" section of the JSON response. Example JSON output can be seen [here](https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160229&state=37&county=183).
 
